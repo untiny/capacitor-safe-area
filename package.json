@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-safe-area",
-  "version": "0.0.1",
+  "name": "@untiny/capacitor-safe-area",
+  "version": "1.0.0",
   "description": "A capacitor plugin that can obtain a safe area on Android and iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -21,6 +21,10 @@
   },
   "bugs": {
     "url": "https://github.com/untiny/capacitor-safe-area/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "capacitor",

@@ -5,19 +5,19 @@ A capacitor plugin that can obtain a safe area on Android and iOS.
 ## Install
 
 ```bash
-npm install capacitor-safe-area
+npm install @untiny/capacitor-safe-area
 npx cap sync
 ```
 
 ## API
 
-`<docgen-index>
+``<docgen-index>
 
 * [`getSafeArea()`](#getsafearea)
 * [`getStatusBarHeight()`](#getstatusbarheight)
 * [Interfaces](#interfaces)
 
-</docgen-index>`
+</docgen-index>``
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
