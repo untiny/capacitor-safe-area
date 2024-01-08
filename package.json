@@ -1,7 +1,7 @@
 {
   "name": "capacitor-safe-area",
   "version": "0.0.1",
-  "description": "A capacitor plugin that can obtain a safe area on Android ained",
+  "description": "A capacitor plugin that can obtain a safe area on Android and iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

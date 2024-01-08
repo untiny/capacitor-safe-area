@@ -9,10 +9,15 @@ import Capacitor
 public class SafeAreaPlugin: CAPPlugin {
     private let implementation = SafeArea()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func getSafeArea(_ call: CAPPluginCall) {
+        DispatchQueue.main.async {
+          call.resolve(implementation.getSafeArea())
+        }
+    }
+
+    @objc func getStatusBarHeight(_ call: CAPPluginCall) {
+        DispatchQueue.main.async {
+          call.resolve(implementation.getStatusBarHeight())
+        }
     }
 }
