@@ -1,6 +1,6 @@
 {
   "name": "@untiny/capacitor-safe-area",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A capacitor plugin that can obtain a safe area on Android and iOS.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
