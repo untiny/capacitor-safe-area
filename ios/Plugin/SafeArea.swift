@@ -9,11 +9,12 @@ import Foundation
             window = UIApplication.shared.keyWindow
         }
         let safeAreaInsets = window?.safeAreaInsets
+        
         return [
-          "top": safeAreaInsets.top ?? 0,
-          "right": safeAreaInsets.right ?? 0,
-          "bottom": safeAreaInsets.bottom ?? 0,
-          "left": safeAreaInsets.left ?? 0
+          "top": Float(safeAreaInsets?.top ?? 0),
+          "right": Float(safeAreaInsets?.right ?? 0),
+          "bottom": Float(safeAreaInsets?.bottom ?? 0),
+          "left": Float(safeAreaInsets?.left ?? 0)
         ]
     }
 
@@ -23,11 +24,11 @@ import Foundation
             let windowScene = scenes.first as? UIWindowScene
             let window = windowScene?.windows.first
             return [
-              "height": window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+              "height": Float(window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0)
             ]
         }
         return [
-            "height": UIApplication.shared.statusBarFrame.height
+            "height": Float(UIApplication.shared.statusBarFrame.height)
         ]
     }
 }

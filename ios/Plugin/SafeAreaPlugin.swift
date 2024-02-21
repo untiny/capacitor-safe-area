@@ -11,13 +11,13 @@ public class SafeAreaPlugin: CAPPlugin {
 
     @objc func getSafeArea(_ call: CAPPluginCall) {
         DispatchQueue.main.async {
-          call.resolve(implementation.getSafeArea())
+            call.resolve(self.implementation.getSafeArea())
         }
     }
 
     @objc func getStatusBarHeight(_ call: CAPPluginCall) {
         DispatchQueue.main.async {
-          call.resolve(implementation.getStatusBarHeight())
+            call.resolve(self.implementation.getStatusBarHeight())
         }
     }
 }
