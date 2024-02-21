@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorSafeArea.podspec"
+    "UntinyCapacitorSafeArea.podspec"
   ],
   "author": "untiny",
   "license": "MIT",
